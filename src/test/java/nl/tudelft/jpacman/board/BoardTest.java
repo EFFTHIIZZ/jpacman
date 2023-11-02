@@ -12,6 +12,10 @@ public class BoardTest {
     private Board boardWithNull;
     private final int width = 1;
     private final int height = 1;
+
+    /***
+     * Setup.
+     */
     @BeforeEach
     void setUp() {
         Square[][] grid = new Square[width][height];
