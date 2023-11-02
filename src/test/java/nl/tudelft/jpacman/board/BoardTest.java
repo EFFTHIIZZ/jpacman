@@ -16,21 +16,33 @@ public class BoardTest {
         board = new Board(grid);
     }
 
+    /***
+     * Test height.
+     */
     @Test
     void testHeight() {
         assertThat(board.getHeight()).isEqualTo(height);
     }
 
+    /***
+     * Test width.
+     */
     @Test
     void testWidth() {
         assertThat(board.getWidth()).isEqualTo(width);
     }
 
+    /***
+     * Test testInvariant.
+     */
     @Test
     void testInvariant() {
         assertThat(board.invariant()).isTrue();
     }
 
+    /***
+     * testNullSquare.
+     */
     @Test
     void testNullSquare() {
         Square[][] gridWithNull = new Square[width][height];
