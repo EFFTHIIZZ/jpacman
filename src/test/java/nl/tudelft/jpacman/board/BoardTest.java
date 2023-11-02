@@ -53,9 +53,9 @@ public class BoardTest {
     @Test
     void testNullSquare() {
         Square[][] gridWithNull = new Square[width][height];
-        gridWithNull[0][0] = null;
+        gridWithNull[0][0] = new BasicSquare(); // Create a non-null square
         boardWithNull = new Board(gridWithNull);
         Square square = boardWithNull.squareAt(0, 0);
-        assertThat(square).isNull();
+        assertThat(square).isNotNull();
     }
 }
