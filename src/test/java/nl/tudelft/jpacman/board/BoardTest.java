@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 public class BoardTest {
     private Board board;
     private Board boardWithNull;
-    private final int width = 1;
-    private final int height = 1;
+    private static int width = 1;
+    private static int height = 1;
 
     /***
      * Setup.
