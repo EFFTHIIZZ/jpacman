@@ -4,11 +4,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/***
+ * Test class for the Board class.
+ */
 public class BoardTest {
     private Board board;
     private Board boardWithNull;
-    final int width = 1;
-    final int height = 1;
+    private final int width = 1;
+    private final int height = 1;
     @BeforeEach
     void setUp() {
         Square[][] grid = new Square[width][height];
