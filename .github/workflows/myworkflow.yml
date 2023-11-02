@@ -32,4 +32,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: xvfb-run ./gradlew build
+    - name: Generate Javadoc
+      run: ./gradlew javadoc
 
